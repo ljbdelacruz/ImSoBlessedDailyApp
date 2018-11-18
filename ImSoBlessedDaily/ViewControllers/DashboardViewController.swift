@@ -12,7 +12,6 @@ import WebKit
 class DashboardViewController: UIViewController {
     var presenter:VCDashboardPresenter?;
     var contentPresenter:VCContentViewPresenter?;
-    
     @IBOutlet weak var UIPostListTV: UITableView!
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -30,7 +29,6 @@ class DashboardViewController: UIViewController {
             destVC.presenter?.url=self.presenter!.selectedPost!.source;
         }
     }
-    
 }
 extension DashboardViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
