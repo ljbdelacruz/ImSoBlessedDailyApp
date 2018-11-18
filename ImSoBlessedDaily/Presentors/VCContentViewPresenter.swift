@@ -7,18 +7,27 @@
 //
 
 import Foundation
+import WebKit
 
 protocol VCContentViewDelegate{
-    func ReturnURLRequest(urlreq:URLRequest)
 }
+
+
 class VCContentViewPresenter:NSObject{
-    var url:URL?;
+    var url:String?;
     var delegate:VCContentViewDelegate?;
-    func toURL(url:String){
-        self.url=URL(string: url);
+    func toURL(url:String)->URL{
+        return URL(string:url)!;
     }
-    func ProcessURLRequest(){
-        print("Processing url request");
-        self.delegate?.ReturnURLRequest(urlreq: URLRequest(url: self.url!))
+    func ProcessURLRequest(url:String)->URLRequest{
+        return URLRequest(url: toURL(url: url));
     }
+    func WebConfig(webContentViewDisplay:UIView)->WKWebView{
+        let webConfiguration = WKWebViewConfiguration()
+        webConfiguration.allowsInlineMediaPlayback = true
+        let UIContentDisplayWK = WKWebView(frame: .zero, configuration: webConfiguration)
+        UIContentDisplayWK.frame.size=webContentViewDisplay.frame.size
+        return UIContentDisplayWK;
+    }
+    
 }

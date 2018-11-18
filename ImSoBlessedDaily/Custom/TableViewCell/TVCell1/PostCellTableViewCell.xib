@@ -22,40 +22,36 @@
                         <rect key="frame" x="16" y="11" width="343" height="58"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="343" id="6Om-VK-m6e"/>
-                            <constraint firstAttribute="width" secondItem="tRo-7y-USf" secondAttribute="height" multiplier="343:58" id="HF4-P2-aBH"/>
-                            <constraint firstAttribute="height" constant="58" id="gs3-ZZ-yae"/>
+                            <constraint firstAttribute="width" secondItem="tRo-7y-USf" secondAttribute="height" multiplier="343:58" id="C95-0c-aUb"/>
+                            <constraint firstAttribute="width" constant="343" id="NHy-lw-SUN"/>
+                            <constraint firstAttribute="height" constant="58" id="tvo-Q5-y9g"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuA-kG-p45">
-                        <rect key="frame" x="16" y="77" width="343" height="264"/>
-                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKO-z7-6rR">
+                        <rect key="frame" x="16" y="87" width="343" height="267"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="TuA-kG-p45" secondAttribute="height" multiplier="343:264" id="5J6-F9-EoE"/>
-                            <constraint firstAttribute="width" constant="343" id="Crp-oB-DCh"/>
-                            <constraint firstAttribute="height" constant="264" id="wzw-pc-IbI"/>
+                            <constraint firstAttribute="height" constant="267" id="lO1-Z6-VHS"/>
+                            <constraint firstAttribute="width" constant="343" id="mAI-SA-RAw"/>
+                            <constraint firstAttribute="width" secondItem="LKO-z7-6rR" secondAttribute="height" multiplier="343:267" id="mRl-VD-RJQ"/>
                         </constraints>
-                        <wkWebViewConfiguration key="configuration">
-                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                            <wkPreferences key="preferences"/>
-                        </wkWebViewConfiguration>
-                    </wkWebView>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="TuA-kG-p45" firstAttribute="leading" secondItem="In0-3O-jat" secondAttribute="leadingMargin" id="LLD-mi-FDw"/>
-                    <constraint firstItem="tRo-7y-USf" firstAttribute="top" secondItem="In0-3O-jat" secondAttribute="topMargin" id="VeO-JH-D46"/>
-                    <constraint firstItem="tRo-7y-USf" firstAttribute="trailing" secondItem="In0-3O-jat" secondAttribute="trailingMargin" id="XZG-Td-ygr"/>
-                    <constraint firstItem="TuA-kG-p45" firstAttribute="trailing" secondItem="In0-3O-jat" secondAttribute="trailingMargin" id="Xvh-z9-TMx"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="TuA-kG-p45" secondAttribute="bottom" constant="13" id="jE2-OX-66l"/>
-                    <constraint firstItem="tRo-7y-USf" firstAttribute="leading" secondItem="In0-3O-jat" secondAttribute="leadingMargin" id="tG5-IV-DuE"/>
-                    <constraint firstItem="TuA-kG-p45" firstAttribute="top" secondItem="tRo-7y-USf" secondAttribute="bottom" constant="8" id="yq1-xA-Rfz"/>
+                    <constraint firstItem="LKO-z7-6rR" firstAttribute="trailing" secondItem="In0-3O-jat" secondAttribute="trailingMargin" id="JqX-ZL-6aI"/>
+                    <constraint firstItem="LKO-z7-6rR" firstAttribute="top" secondItem="tRo-7y-USf" secondAttribute="bottom" constant="18" id="Uom-Pb-z1e"/>
+                    <constraint firstItem="LKO-z7-6rR" firstAttribute="bottom" secondItem="In0-3O-jat" secondAttribute="bottomMargin" id="YI2-5E-Wqc"/>
+                    <constraint firstItem="tRo-7y-USf" firstAttribute="top" secondItem="In0-3O-jat" secondAttribute="topMargin" id="bbT-4t-0rs"/>
+                    <constraint firstItem="LKO-z7-6rR" firstAttribute="leading" secondItem="In0-3O-jat" secondAttribute="leadingMargin" id="dpg-hr-hG3"/>
+                    <constraint firstItem="tRo-7y-USf" firstAttribute="trailing" secondItem="In0-3O-jat" secondAttribute="trailingMargin" id="gfO-TI-RCU"/>
+                    <constraint firstItem="tRo-7y-USf" firstAttribute="leading" secondItem="In0-3O-jat" secondAttribute="leadingMargin" id="lnY-5t-ink"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="UITVDescription" destination="tRo-7y-USf" id="SyO-lz-qJf"/>
-                <outlet property="UIWKContent" destination="TuA-kG-p45" id="QMt-4q-zeD"/>
+                <outlet property="UIWebViewDisplay" destination="LKO-z7-6rR" id="2ce-1A-bha"/>
             </connections>
             <point key="canvasLocation" x="416.80000000000001" y="219.04047976011995"/>
         </tableViewCell>

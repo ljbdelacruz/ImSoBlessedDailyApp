@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import WebKit
 
 class DashboardViewController: UIViewController {
     var presenter:VCDashboardPresenter?;
+    var contentPresenter:VCContentViewPresenter?;
+    
     @IBOutlet weak var UIPostListTV: UITableView!
     override func viewDidLoad(){
         super.viewDidLoad()
+        self.contentPresenter=VCContentViewPresenter();
         self.presenter=VCDashboardPresenter();
         self.presenter?.delegate=self;
         self.UIPostListTV.delegate=self;
@@ -23,7 +27,7 @@ class DashboardViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "dashboardToContent"{
             let destVC=segue.destination as! ContentViewController;
-            destVC.presenter?.toURL(url: self.presenter!.selectedPost!.source);
+            destVC.presenter?.url=self.presenter!.selectedPost!.source;
         }
     }
     
@@ -35,6 +39,10 @@ extension DashboardViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostCellTableViewCell
         cell.UITVDescription.text=self.presenter!.posts![indexPath.row].title;
+        let wkui=self.contentPresenter?.WebConfig(webContentViewDisplay: cell.UIWebViewDisplay);
+        wkui?.uiDelegate=self;
+        wkui?.load(self.contentPresenter!.ProcessURLRequest(url:self.presenter!.posts![indexPath.row].source))
+        cell.UIWebViewDisplay.addSubview(wkui!);
         return cell;
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -42,6 +50,7 @@ extension DashboardViewController:UITableViewDelegate, UITableViewDataSource{
         self.presenter?.selectedPost=self.presenter?.posts?[indexPath.row];
         performSegue(withIdentifier: "dashboardToContent", sender: nil)
     }
+    
 }
 //MARK: VCDashboardDelegate func
 extension DashboardViewController:VCDashboardDelegate{
@@ -49,4 +58,7 @@ extension DashboardViewController:VCDashboardDelegate{
         print("COMPLETE DATA");
         self.UIPostListTV.reloadData()
     }
+}
+extension DashboardViewController:WKUIDelegate{
+    
 }

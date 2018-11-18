@@ -12,14 +12,18 @@ import WebKit
 class PostCellTableViewCell: UITableViewCell {
 
     @IBOutlet weak var UITVDescription: UITextView!
-    @IBOutlet weak var UIWKContent: WKWebView!
+    @IBOutlet weak var UIWebViewDisplay: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.UIWebViewDisplay.isUserInteractionEnabled=false;
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
+    
+    
+    
 
 }
