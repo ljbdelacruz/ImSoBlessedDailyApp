@@ -16,6 +16,18 @@
 		EEC6C8F0219FB6D8005EE211 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C8EF219FB6D8005EE211 /* DashboardViewController.swift */; };
 		EEC6C8F2219FB6F0005EE211 /* VCDashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C8F1219FB6F0005EE211 /* VCDashboardPresenter.swift */; };
 		EEC6C8F4219FB9CA005EE211 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EEC6C8F3219FB9CA005EE211 /* launch.jpg */; };
+		EEC6C8F7219FC9D0005EE211 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C8F6219FC9D0005EE211 /* ContentViewController.swift */; };
+		EEC6C8FA219FCA19005EE211 /* PostInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C8F9219FCA19005EE211 /* PostInfo.swift */; };
+		EEC6C8FC219FCC43005EE211 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEC6C8FB219FCC43005EE211 /* GoogleService-Info.plist */; };
+		EEC6C903219FD3EE005EE211 /* URLGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C8FE219FD3EE005EE211 /* URLGetter.swift */; };
+		EEC6C904219FD3EE005EE211 /* MyCustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C8FF219FD3EE005EE211 /* MyCustomAlert.swift */; };
+		EEC6C905219FD3EE005EE211 /* AdjustingTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C900219FD3EE005EE211 /* AdjustingTF.swift */; };
+		EEC6C906219FD3EE005EE211 /* TFAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C901219FD3EE005EE211 /* TFAccessory.swift */; };
+		EEC6C907219FD3EE005EE211 /* MyCustomFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C902219FD3EE005EE211 /* MyCustomFirebase.swift */; };
+		EEC6C90C219FD5E1005EE211 /* PostCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C90B219FD5E1005EE211 /* PostCellTableViewCell.swift */; };
+		EEC6C90E219FD5F3005EE211 /* PostCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC6C90D219FD5F2005EE211 /* PostCellTableViewCell.xib */; };
+		EEC6C91021A00497005EE211 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C90F21A00497005EE211 /* LoginViewController.swift */; };
+		EEC6C91221A03C25005EE211 /* VCContentViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C91121A03C25005EE211 /* VCContentViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +44,18 @@
 		EEC6C8EF219FB6D8005EE211 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		EEC6C8F1219FB6F0005EE211 /* VCDashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDashboardPresenter.swift; sourceTree = "<group>"; };
 		EEC6C8F3219FB9CA005EE211 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
+		EEC6C8F6219FC9D0005EE211 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		EEC6C8F9219FCA19005EE211 /* PostInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInfo.swift; sourceTree = "<group>"; };
+		EEC6C8FB219FCC43005EE211 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEC6C8FE219FD3EE005EE211 /* URLGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLGetter.swift; sourceTree = "<group>"; };
+		EEC6C8FF219FD3EE005EE211 /* MyCustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomAlert.swift; sourceTree = "<group>"; };
+		EEC6C900219FD3EE005EE211 /* AdjustingTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustingTF.swift; sourceTree = "<group>"; };
+		EEC6C901219FD3EE005EE211 /* TFAccessory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFAccessory.swift; sourceTree = "<group>"; };
+		EEC6C902219FD3EE005EE211 /* MyCustomFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomFirebase.swift; sourceTree = "<group>"; };
+		EEC6C90B219FD5E1005EE211 /* PostCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellTableViewCell.swift; sourceTree = "<group>"; };
+		EEC6C90D219FD5F2005EE211 /* PostCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCellTableViewCell.xib; sourceTree = "<group>"; };
+		EEC6C90F21A00497005EE211 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EEC6C91121A03C25005EE211 /* VCContentViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCContentViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +108,9 @@
 		EEC6C8DA219FB47C005EE211 /* ImSoBlessedDaily */ = {
 			isa = PBXGroup;
 			children = (
+				EEC6C908219FD5A5005EE211 /* Custom */,
+				EEC6C8FD219FD3B6005EE211 /* Services */,
+				EEC6C8F8219FC9E7005EE211 /* DataModel */,
 				EEC6C8F5219FB9D3005EE211 /* Assets */,
 				EEC6C8EE219FB6C9005EE211 /* Presentors */,
 				EEC6C8ED219FB6C0005EE211 /* ViewControllers */,
@@ -92,6 +119,7 @@
 				EEC6C8DF219FB47C005EE211 /* Main.storyboard */,
 				EEC6C8E2219FB47C005EE211 /* Assets.xcassets */,
 				EEC6C8E4219FB47C005EE211 /* LaunchScreen.storyboard */,
+				EEC6C8FB219FCC43005EE211 /* GoogleService-Info.plist */,
 				EEC6C8E7219FB47C005EE211 /* Info.plist */,
 			);
 			path = ImSoBlessedDaily;
@@ -101,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				EEC6C8EF219FB6D8005EE211 /* DashboardViewController.swift */,
+				EEC6C8F6219FC9D0005EE211 /* ContentViewController.swift */,
+				EEC6C90F21A00497005EE211 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -109,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				EEC6C8F1219FB6F0005EE211 /* VCDashboardPresenter.swift */,
+				EEC6C91121A03C25005EE211 /* VCContentViewPresenter.swift */,
 			);
 			path = Presentors;
 			sourceTree = "<group>";
@@ -119,6 +150,51 @@
 				EEC6C8F3219FB9CA005EE211 /* launch.jpg */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		EEC6C8F8219FC9E7005EE211 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEC6C8F9219FCA19005EE211 /* PostInfo.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		EEC6C8FD219FD3B6005EE211 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EEC6C900219FD3EE005EE211 /* AdjustingTF.swift */,
+				EEC6C8FF219FD3EE005EE211 /* MyCustomAlert.swift */,
+				EEC6C902219FD3EE005EE211 /* MyCustomFirebase.swift */,
+				EEC6C901219FD3EE005EE211 /* TFAccessory.swift */,
+				EEC6C8FE219FD3EE005EE211 /* URLGetter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EEC6C908219FD5A5005EE211 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EEC6C909219FD5B0005EE211 /* TableViewCell */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		EEC6C909219FD5B0005EE211 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EEC6C90A219FD5BC005EE211 /* TVCell1 */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		EEC6C90A219FD5BC005EE211 /* TVCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				EEC6C90B219FD5E1005EE211 /* PostCellTableViewCell.swift */,
+				EEC6C90D219FD5F2005EE211 /* PostCellTableViewCell.xib */,
+			);
+			path = TVCell1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +259,10 @@
 			files = (
 				EEC6C8E6219FB47C005EE211 /* LaunchScreen.storyboard in Resources */,
 				EEC6C8E3219FB47C005EE211 /* Assets.xcassets in Resources */,
+				EEC6C8FC219FCC43005EE211 /* GoogleService-Info.plist in Resources */,
 				EEC6C8F4219FB9CA005EE211 /* launch.jpg in Resources */,
 				EEC6C8E1219FB47C005EE211 /* Main.storyboard in Resources */,
+				EEC6C90E219FD5F3005EE211 /* PostCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +342,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC6C905219FD3EE005EE211 /* AdjustingTF.swift in Sources */,
+				EEC6C8F7219FC9D0005EE211 /* ContentViewController.swift in Sources */,
 				EEC6C8DE219FB47C005EE211 /* ViewController.swift in Sources */,
+				EEC6C90C219FD5E1005EE211 /* PostCellTableViewCell.swift in Sources */,
+				EEC6C907219FD3EE005EE211 /* MyCustomFirebase.swift in Sources */,
 				EEC6C8F0219FB6D8005EE211 /* DashboardViewController.swift in Sources */,
+				EEC6C906219FD3EE005EE211 /* TFAccessory.swift in Sources */,
 				EEC6C8F2219FB6F0005EE211 /* VCDashboardPresenter.swift in Sources */,
 				EEC6C8DC219FB47C005EE211 /* AppDelegate.swift in Sources */,
+				EEC6C8FA219FCA19005EE211 /* PostInfo.swift in Sources */,
+				EEC6C91221A03C25005EE211 /* VCContentViewPresenter.swift in Sources */,
+				EEC6C903219FD3EE005EE211 /* URLGetter.swift in Sources */,
+				EEC6C91021A00497005EE211 /* LoginViewController.swift in Sources */,
+				EEC6C904219FD3EE005EE211 /* MyCustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ljbdelacruz.ImSoBlessedDaily;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljbdelacruz.ImSoBlessedDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,7 +528,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ljbdelacruz.ImSoBlessedDaily;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljbdelacruz.ImSoBlessedDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

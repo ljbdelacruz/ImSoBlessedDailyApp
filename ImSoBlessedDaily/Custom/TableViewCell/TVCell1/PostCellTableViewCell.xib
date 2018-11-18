@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="365" id="l6z-uF-uhe" customClass="PostCellTableViewCell" customModule="ImSoBlessedDaily" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="365"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l6z-uF-uhe" id="In0-3O-jat">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="364.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hi this is world new post your content here" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRo-7y-USf">
+                        <rect key="frame" x="16" y="11" width="343" height="58"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="343" id="6Om-VK-m6e"/>
+                            <constraint firstAttribute="width" secondItem="tRo-7y-USf" secondAttribute="height" multiplier="343:58" id="HF4-P2-aBH"/>
+                            <constraint firstAttribute="height" constant="58" id="gs3-ZZ-yae"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuA-kG-p45">
+                        <rect key="frame" x="16" y="77" width="343" height="264"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="TuA-kG-p45" secondAttribute="height" multiplier="343:264" id="5J6-F9-EoE"/>
+                            <constraint firstAttribute="width" constant="343" id="Crp-oB-DCh"/>
+                            <constraint firstAttribute="height" constant="264" id="wzw-pc-IbI"/>
+                        </constraints>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TuA-kG-p45" firstAttribute="leading" secondItem="In0-3O-jat" secondAttribute="leadingMargin" id="LLD-mi-FDw"/>
+                    <constraint firstItem="tRo-7y-USf" firstAttribute="top" secondItem="In0-3O-jat" secondAttribute="topMargin" id="VeO-JH-D46"/>
+                    <constraint firstItem="tRo-7y-USf" firstAttribute="trailing" secondItem="In0-3O-jat" secondAttribute="trailingMargin" id="XZG-Td-ygr"/>
+                    <constraint firstItem="TuA-kG-p45" firstAttribute="trailing" secondItem="In0-3O-jat" secondAttribute="trailingMargin" id="Xvh-z9-TMx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TuA-kG-p45" secondAttribute="bottom" constant="13" id="jE2-OX-66l"/>
+                    <constraint firstItem="tRo-7y-USf" firstAttribute="leading" secondItem="In0-3O-jat" secondAttribute="leadingMargin" id="tG5-IV-DuE"/>
+                    <constraint firstItem="TuA-kG-p45" firstAttribute="top" secondItem="tRo-7y-USf" secondAttribute="bottom" constant="8" id="yq1-xA-Rfz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="UITVDescription" destination="tRo-7y-USf" id="SyO-lz-qJf"/>
+                <outlet property="UIWKContent" destination="TuA-kG-p45" id="QMt-4q-zeD"/>
+            </connections>
+            <point key="canvasLocation" x="416.80000000000001" y="219.04047976011995"/>
+        </tableViewCell>
+    </objects>
+</document>
