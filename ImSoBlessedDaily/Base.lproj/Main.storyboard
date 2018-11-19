@@ -85,55 +85,12 @@
                     <connections>
                         <outlet property="UIPostListTV" destination="1gn-5u-vv3" id="jU5-ph-y9z"/>
                         <segue destination="DZH-Cf-Rx0" kind="show" identifier="dashboardToContent" id="qMA-o8-MZQ"/>
-                        <segue destination="zwN-by-wiG" kind="show" identifier="dashboardToLogin" id="7On-oz-NQ7"/>
+                        <segue destination="sYy-2W-vlD" kind="show" id="You-bH-PA8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6O-zq-TRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1484" y="584"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="BQx-xh-p3q">
-            <objects>
-                <viewController id="zwN-by-wiG" customClass="LoginViewController" customModule="ImSoBlessedDaily" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LTW-3N-UGI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kt6-dL-5sF">
-                                <rect key="frame" x="16" y="617" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="LOGIN">
-                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2pm-YZ-oIa">
-                                <rect key="frame" x="16" y="342" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLQ-8P-8Af">
-                                <rect key="frame" x="16" y="387" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="fvg-1v-1uW"/>
-                    </view>
-                    <connections>
-                        <outlet property="UIEmailTF" destination="2pm-YZ-oIa" id="9rT-Tr-oHF"/>
-                        <outlet property="UIPasswordTF" destination="bLQ-8P-8Af" id="pTZ-Zy-4aC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sI4-mV-kYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-647" y="1297"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="ZYV-nX-O7K">
@@ -159,6 +116,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3l-eJ-i4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-647" y="583"/>
+        </scene>
+        <!--login-->
+        <scene sceneID="vRS-wg-Qqz">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="login.storyboard" storyboardName="login" id="sYy-2W-vlD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Y9-Jo-tGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1485" y="1035"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

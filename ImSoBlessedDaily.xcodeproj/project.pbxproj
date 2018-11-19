@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D13B920C266F5032BE1D0430 /* Pods_ImSoBlessedDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293E2EE43E06B8042990C953 /* Pods_ImSoBlessedDaily.framework */; };
+		EE1D52B621A35682006029E4 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1D52B521A35682006029E4 /* login.storyboard */; };
+		EE1D52B821A3571A006029E4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D52B721A3571A006029E4 /* LoginPresenter.swift */; };
 		EEC6C8DC219FB47C005EE211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C8DB219FB47C005EE211 /* AppDelegate.swift */; };
 		EEC6C8DE219FB47C005EE211 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6C8DD219FB47C005EE211 /* ViewController.swift */; };
 		EEC6C8E1219FB47C005EE211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC6C8DF219FB47C005EE211 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		293E2EE43E06B8042990C953 /* Pods_ImSoBlessedDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImSoBlessedDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDCAD9BFBDA3B986802058F /* Pods-ImSoBlessedDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImSoBlessedDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImSoBlessedDaily/Pods-ImSoBlessedDaily.release.xcconfig"; sourceTree = "<group>"; };
 		CC667DD96640007697D1334F /* Pods-ImSoBlessedDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImSoBlessedDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImSoBlessedDaily/Pods-ImSoBlessedDaily.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1D52B521A35682006029E4 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+		EE1D52B721A3571A006029E4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		EEC6C8D8219FB47C005EE211 /* ImSoBlessedDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImSoBlessedDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC6C8DB219FB47C005EE211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEC6C8DD219FB47C005EE211 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE1D52B121A35641006029E4 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D52B221A35647006029E4 /* login */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		EE1D52B221A35647006029E4 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D52B921A35953006029E4 /* retrievePassword */,
+				EE1D52B521A35682006029E4 /* login.storyboard */,
+				EEC6C90F21A00497005EE211 /* LoginViewController.swift */,
+				EE1D52B721A3571A006029E4 /* LoginPresenter.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		EE1D52B921A35953006029E4 /* retrievePassword */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = retrievePassword;
+			sourceTree = "<group>";
+		};
 		EEC6C8CF219FB47C005EE211 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +138,7 @@
 		EEC6C8DA219FB47C005EE211 /* ImSoBlessedDaily */ = {
 			isa = PBXGroup;
 			children = (
+				EE1D52B121A35641006029E4 /* ui */,
 				EEC6C908219FD5A5005EE211 /* Custom */,
 				EEC6C8FD219FD3B6005EE211 /* Services */,
 				EEC6C8F8219FC9E7005EE211 /* DataModel */,
@@ -130,7 +161,6 @@
 			children = (
 				EEC6C8EF219FB6D8005EE211 /* DashboardViewController.swift */,
 				EEC6C8F6219FC9D0005EE211 /* ContentViewController.swift */,
-				EEC6C90F21A00497005EE211 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -263,6 +293,7 @@
 				EEC6C8F4219FB9CA005EE211 /* launch.jpg in Resources */,
 				EEC6C8E1219FB47C005EE211 /* Main.storyboard in Resources */,
 				EEC6C90E219FD5F3005EE211 /* PostCellTableViewCell.xib in Resources */,
+				EE1D52B621A35682006029E4 /* login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +377,7 @@
 				EEC6C8F7219FC9D0005EE211 /* ContentViewController.swift in Sources */,
 				EEC6C8DE219FB47C005EE211 /* ViewController.swift in Sources */,
 				EEC6C90C219FD5E1005EE211 /* PostCellTableViewCell.swift in Sources */,
+				EE1D52B821A3571A006029E4 /* LoginPresenter.swift in Sources */,
 				EEC6C907219FD3EE005EE211 /* MyCustomFirebase.swift in Sources */,
 				EEC6C8F0219FB6D8005EE211 /* DashboardViewController.swift in Sources */,
 				EEC6C906219FD3EE005EE211 /* TFAccessory.swift in Sources */,
@@ -505,6 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				INFOPLIST_FILE = ImSoBlessedDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +557,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				INFOPLIST_FILE = ImSoBlessedDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
